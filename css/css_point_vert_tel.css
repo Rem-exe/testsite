@@ -231,45 +231,14 @@ hr {
 /*Animation de l'apparation des divs lorsque l'on clique sur les bouton*/
 
 .div_principales {
-  animation-name: animation;
-	animation-duration: 550ms;
   display: none;
   height: fit-content;
-  background-color: #e4eee2;
-  border: #e4eee2 20px solid;
+  background-color: #c8e0c3;
+  border: #c8e0c3 20px solid;
 }
 
 .show {
   display: block;
   position: relative;
   z-index: 999;
-}
-
-img {
- animation-name: animationimg;
- animation-duration: 420ms;
-}
-  
-@keyframes animation{
-	0%{
-		/*transform: translateY(10vh);*/
-		opacity: 0;
-
-	}
-	100%{
-		/*transform: translateY(0px);*/
-		opacity: 1;
-  }
-}
-
-@keyframes animationfin{
-	0%{
-		/*transform: translateY(10vh);*/
-		opacity: 1;
-
-	}
-	100%{
-		/*transform: translateY(0px);*/
-		opacity: 0;
-  }
 }
