@@ -1,0 +1,275 @@
+/*Positionnement des éléments structurants la page*/
+
+body {
+  position: relative;
+	margin: 0;
+  width: 100vw;
+}
+
+header { 
+  position: relative;
+  background-color : #83c974;
+  box-shadow: #00000042 0px 0px 10px 5px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+header p{
+  font-size: 1.8em;
+  color: #fff;
+  text-shadow: 0.05em 0.05em 0.05em #000;
+  font-family: 'Lobster', cursive;
+  width: 50%;
+  margin-left: 20px;
+}
+
+main {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color : #fff;
+}
+
+#menu_des_categories { /*= menu de selection*/
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  max-height: 90vh;
+  flex-basis: auto;
+  flex-grow: 1;                       
+}
+
+/*Style des différents textes du site*/
+
+h1 {
+  font-size: 0em;
+  color: #fff;
+  text-shadow: 0.05em 0.05em 0.07em #000;
+  font-family: 'Source Serif Pro', serif;
+}
+
+p {
+  color: #000;
+  text-shadow: 0.05em 0.05em 0.05em rgb(183, 183, 183);
+  font-family: 'Source Serif Pro', serif;
+  text-align: justify;
+  z-index: 1;
+}
+
+li {
+  color: #000;
+  text-shadow: 0.05em 0.05em 0.05em rgb(183, 183, 183);
+  font-family: 'Source Serif Pro', serif;
+  text-align: justify;
+}
+
+a {
+  color: #000;
+  text-shadow: 0.05em 0.05em 0.05em rgb(183, 183, 183);
+  font-family: 'Source Serif Pro', serif;
+  text-align: justify;
+}
+
+hr {
+  border: none;
+  color: transparent;
+  height: 10px;
+}
+
+
+/* Style du texte et des éléments dans les div avec le contenu */
+ 
+.police_texte {
+  width: 100%;
+  font-size: 1em;
+}
+
+.police_texte2 {
+  width: 100%;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.police_texte3 {
+  width: 100%;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.police_accueil {
+  font-size: 2em;
+  text-align: center;
+}
+
+.lien_adresse_maps {
+  text-decoration: none;  
+}
+
+/*Positionnement et style des images dans les div avec le contenu*/
+
+#img_accueil {
+  border-radius: 1em;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#img_partenaires {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#img_plan {
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+  transition: all 0.2s;
+  z-index: 3;
+}
+
+#img_plan:active {
+  box-shadow: 3px 3px 8px 0 rgba(0,0,0,0.5);
+  transform: scale(0.98);
+}
+
+/*Style des boutons du menu latéral */
+
+.styled {
+  position: relative;
+  width: 100%;
+  height: 12vh;
+  background-image: linear-gradient(#98d48a, rgb(182, 230, 171)) ;
+  transition: all 0.5s;
+  margin: 0;
+  padding: 0;
+  border-top: #ff0000 2px block;
+  border-left: none;
+  border-right: none;
+}
+
+.styled p {
+  position: relative;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  font-family: 'Lobster Two', cursive;
+}
+
+.styled:hover {
+  background-color: rgb(255, 255, 255);
+  color: #98d48a;
+  text-shadow: none;
+  background-image: linear-gradient( rgb(221, 240, 216), rgb(200, 224, 195)) ;
+}
+
+/*Positionnement et style de l'image de fond et du logo*/
+
+.logo {
+  position: relative;
+  border-radius: 0.2em;
+  transition: all 0.3s;
+  align-self: center;
+  width: 50%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#logo {
+  margin-left: 50px;
+  width: 60%;
+  height: auto;
+  border-radius: 0.2em;
+  transition: all 0.3s;
+}
+
+#logo:hover {
+  transform:scale(1.05);
+}
+
+/*Style des PDF viewer*/
+
+.pdf1 {
+  z-index: 999;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.pdf2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/*Style de la selection des éléments*/
+
+.selection::selection {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+.selection_header::selection {
+  color: rgb(198, 250, 181);
+  background-color: transparent;
+}
+
+.styled::selection {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+/*Animation de l'apparation des divs lorsque l'on clique sur les bouton*/
+
+.div_principales {
+  animation-name: animation;
+	animation-duration: 550ms;
+  display: none;
+  height: fit-content;
+  background-color: #e4eee2;
+  border: #e4eee2 20px solid;
+}
+
+.show {
+  display: block;
+  position: relative;
+  z-index: 999;
+}
+
+img {
+ animation-name: animationimg;
+ animation-duration: 420ms;
+}
+  
+@keyframes animation{
+	0%{
+		/*transform: translateY(10vh);*/
+		opacity: 0;
+
+	}
+	100%{
+		/*transform: translateY(0px);*/
+		opacity: 1;
+  }
+}
+
+@keyframes animationfin{
+	0%{
+		/*transform: translateY(10vh);*/
+		opacity: 1;
+
+	}
+	100%{
+		/*transform: translateY(0px);*/
+		opacity: 0;
+  }
+}
