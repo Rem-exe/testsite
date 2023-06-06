@@ -7,7 +7,7 @@ body {
 }
 
 header { 
-  position: relative;
+  position: fixed;
   background-color : #83c974;
   box-shadow: #00000042 0px 0px 10px 5px;
   display: flex;
