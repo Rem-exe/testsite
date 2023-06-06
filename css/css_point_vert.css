@@ -1,0 +1,378 @@
+/*Positionnement des éléments structurants la page*/
+
+body {
+  position: relative;
+	margin: 0;
+  overflow-x: clip; 
+  overflow-y: clip;
+  background-color: transparent;
+  float: left;
+  width: 100%;
+  max-height: 100%;
+}
+
+header { 
+  float: left;
+  top: 3.5vh; 
+  width: 100%;
+  position: absolute;
+  height: 5vh;
+  background-color : transparent;
+  left: 20vw;
+  font-size: 5vw;
+  color: #fff;
+  text-shadow: 0.05em 0.05em 0.05em #000;
+  font-family: 'Lobster', cursive;
+}
+
+main {
+  position: relative;
+  float: left;
+  width: 100%;
+  max-height: 100%;
+  background-color : transparent;
+  padding: 2vw;
+  display: grid;
+  grid-template-columns: 15% 80%;
+  grid-template-rows: 75vh;
+  grid-template-areas: "menu_des_categories contenu_des_div"
+}
+
+#menu_des_categories { /*= menu de selection latéral*/
+  float: left;
+  background-color: #d7ffcf;
+  border-radius: 0.2em;
+  padding: 1em;
+  max-width: 82%;
+  max-height: 90vh;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-row: minmax(0px, 0px);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 8.5%);
+  grid-template-areas: "accueil_menu"
+                       "notre_raison_d_etre_menu"
+                       "qui_sommes_nous_menu"
+                       "notre_mission_menu"
+                       "organisation_menu" 
+                       "equipe_menu"  
+                       "partenaires_menu" 
+                       "dons_menu" 
+                       "liens_utiles_menu"
+                       "notre_brochure_menu" 
+                       "contact_menu"
+                       "rgpd_menu";   
+}
+
+
+
+#contenu_des_div { /*= div avec le contenu*/
+  float: left;
+  top: 1vh;
+  left: -2.5vw;
+  position: relative; 
+}
+
+#contenu_des_div > div {
+  float: left;
+  display: none;
+  width: 100%;
+  height: 72vh;
+  border-radius: 0.2em;
+  margin-top: 0vw;
+  left: 3vw ;
+  position: relative;
+  background-color: #d7ffcf;
+}
+
+/*Style des différents textes du site*/
+
+h1 {
+  position: relative;
+  left: 1em;
+  font-size: 2.3vw;
+  color: #fff;
+  text-shadow: 0.05em 0.05em 0.07em #000;
+  font-family: 'Source Serif Pro', serif;
+}
+
+p {
+  position: relative;
+  left: 2vw;
+  color: #000;
+  text-shadow: 0.05em 0.05em 0.05em rgb(183, 183, 183);
+  font-family: 'Source Serif Pro', serif;
+  text-align: justify;
+  z-index: 1;
+}
+
+li {
+  position: relative;
+  color: #000;
+  text-shadow: 0.05em 0.05em 0.05em rgb(183, 183, 183);
+  font-family: 'Source Serif Pro', serif;
+  text-align: justify;
+}
+
+a {
+  color: #000;
+  text-shadow: 0.05em 0.05em 0.05em rgb(183, 183, 183);
+  font-family: 'Source Serif Pro', serif;
+  text-align: justify;
+}
+
+hr {
+  border: none;
+  color: transparent;
+  height: 10px;
+}
+
+/*Style du texte et des éléments dans les div avec le contenu*/
+ 
+h2 {
+  text-shadow: 0.05em 0.05em 0.05em rgb(183, 183, 183);
+  font-family: 'Source Serif Pro', serif;
+  text-align: center;
+  font-size: 1.8vw;
+  background-color: #ecffe9;
+}
+
+.police_texte {
+  width: 73vw;
+  font-size: 1.5vw;
+}
+
+.police_texte2 {
+  position: relative;
+  width: 73vw;
+  font-size: 2vw;
+  left: 18vw;
+  top: -2vh;
+}
+
+.police_texte3 {
+  position: relative;
+  width: 73vw;
+  font-size: 1.7vw;
+  left: 18vw;
+  top: -2vh;
+
+}
+
+.police_accueil {
+  font-size: 2.7vw!important;
+}
+
+.credit_photo_police {
+  position: absolute;
+  top: 30.5em;
+}
+
+.site_realisation_police {
+  position: absolute;
+  top: 32em;
+}
+
+.lien_adresse_maps {
+  text-decoration: none;  
+}
+
+/*Positionnement et style des images dans les div avec le contenu*/
+
+#img_accueil {
+  border-radius: 1em;
+  position: fixed;
+  left: 27%;
+  top: 46%;
+  width: 60vw;
+  height: auto;
+}
+
+#img_partenaires {
+  position: fixed;
+  left: 65%;
+  top: 45%;
+  width: 25vw;
+  height: auto;
+}
+
+#img_plan {
+  position: fixed;
+  left: 50%;
+  top: 45%;
+  width: 35vw;
+  height: auto;
+  box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+  transition: all 0.2s;
+  z-index: 3;
+}
+
+#img_plan:active {
+  box-shadow: 3px 3px 8px 0 rgba(0,0,0,0.5);
+  left: 51%;
+  top: 46%;
+}
+
+/*Style des boutons du menu latéral*/
+
+button {
+  width: 100%;
+  height: 100%;
+}
+
+.styled {
+  position: relative;
+  float: left;
+  border: 0;
+  bottom: 0.5vh;
+  max-width: 15vw;
+  max-height: 5.9vh;
+  font-size: 1.1vw;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-family: 'Lobster Two', cursive;
+  background-color: #98d48a;
+  box-shadow: inset 2px -2px 3px rgba(0, 0, 0, .6);
+  transition: all 0.5s;
+}
+
+.styled:hover {
+  background-color: rgb(255, 255, 255);
+  color: #98d48a;
+  text-shadow: none;
+  transform:scale(1.04);
+}
+
+.styled:focus {
+  background-color: #d7ffcf;
+  color: #98d48a;
+  text-shadow: none;
+  box-shadow: inset -3px 2px 3px rgba(0, 0, 0, .6);
+  transform:scale(1) !important;
+}
+
+.styled:active {
+  box-shadow: inset -2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+/*Positionnement et style de l'image de fond et du logo*/
+
+.div_fond {
+  width: 100vw;
+  height: 100vh;
+  background-image: "img_point_vert/entree_jeu.jpg";
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  position: absolute;
+}
+
+#img_fond {
+  height: 100%;
+  width: 100%;
+  ;
+}
+
+.logo {
+  position: relative;
+  top: 3vh;
+	left: 3vw;
+  border-radius: 0.2em;
+  transition: all 0.3s;
+}
+
+#logo {
+  width: 12%;
+  height: 12%;
+  border-radius: 0.2em;
+  transition: all 0.3s;
+}
+
+#logo:hover {
+  transform:scale(1.05);
+}
+
+/*Style des PDF viewer*/
+
+.pdf1 {
+  position: relative;
+  width: 45%;
+  height: 70%;
+  left: 3vw;
+}
+
+.pdf2 {
+  position: relative;
+  width: 45%;
+  height: 70%;
+  left: 5vw;
+}
+
+/*Style du rond qui suit la souris*/
+
+#mouse-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: -24px;
+  background-color:#d7ffcf;
+  border-radius: 50px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/*Style de la selection des éléments*/
+
+.selection::selection {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+.selection_header::selection {
+  color: rgb(198, 250, 181);
+  background-color: transparent;
+}
+
+.styled::selection {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+/*Animation de l'apparation des divs lorsque l'on clique sur les bouton*/
+
+.div_principales {
+  animation-name: animation;
+	animation-duration: 550ms;
+}
+
+img {
+ animation-name: animationimg;
+ animation-duration: 420ms;
+}
+  
+@keyframes animation{
+	0%{
+		/*transform: translateY(10vh);*/
+		opacity: 0;
+
+	}
+	100%{
+		/*transform: translateY(0px);*/
+		opacity: 1;
+  }
+}
+
+@keyframes animationfin{
+	0%{
+		/*transform: translateY(10vh);*/
+		opacity: 1;
+
+	}
+	100%{
+		/*transform: translateY(0px);*/
+		opacity: 0;
+  }
+}
