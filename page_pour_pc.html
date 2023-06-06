@@ -1,0 +1,223 @@
+<!DOCTYPE html> <!-- Site web de Rémi ASSELIN pour l'association Point Vert -->
+<html>
+  <head>
+    <title>Site Web Point Vert</title>
+    <meta charset="UTF-8">
+    <link href="css/css_point_vert.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <meta name="google-site-verification" content="dqC17NQ2ZY1k6Ups8GZ2Dn46niPWYoqdeXjLFPCnwh8" />
+    
+    <script src="https://kit.fontawesome.com/0420d2e0d4.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <!-- Titre principal -->
+  <header class="selection_header">Association Point Vert</header>
+
+  <body>
+    <!-- Image de fond -->
+    <div class="div_fond">
+      <img class="selection" id="img_fond" src="images/entree_jeu.jpg" width="1024" height="768" loading="lazy">
+    </div>
+    <!-- Logo en haut à gauche -->
+    <div class="logo">
+      <img class="selection" id="logo" src="images/logo_point_vert2.jpg" width="800" height="500" onclick="invisible0()">
+    </div>
+    <!-- Contenu de la page (main) -->
+    <main>
+      <!-- Menu latéral gauche -->
+      <div id="menu_des_categories">
+
+        <div class="accueil_menu selection menu">
+          <button id="btn1" class="accueil styled" onclick="invisible1()"><i class="fa-solid fa-house"></i> | Accueil</button>
+        </div>
+
+        <div class="notre_raison_d_etre_menu selection menu">
+          <button id="btn2" class="notre_raison_d_etre styled" onclick="invisible2()"><i class="fa-solid fa-hand-holding-heart"></i> | Notre raison d'être</button>
+        </div>
+
+        <div class="qui_sommes_nous_menu selection menu">
+          <button id="btn3" class="qui_sommes_nous styled" onclick="invisible3()"><i class="fa-solid fa-person-shelter"></i> | Qui sommes-nous</button>
+        </div>
+
+        <div class="notre_mission_menu selection menu">
+          <button id="btn4" class="notre_mission styled" onclick="invisible4()"><i class="fa-regular fa-compass"></i> | Notre mission</button>
+        </div>
+
+        <div class="organisation_menu selection menu">
+          <button id="btn5" class="organisation styled" onclick="invisible5()"><i class="fa-solid fa-sitemap"></i> | Organisation</button>
+        </div>
+
+        <div class="equipe_menu selection menu">
+          <button id="btn6" class="equipe styled" onclick="invisible6()"><i class="fa-solid fa-people-group"></i> | Équipe</button>
+        </div>
+
+        <div class="partenaires_menu selection menu">
+          <button id="btn7" class="partenaires styled" onclick="invisible7()"><i class="fa-solid fa-handshake"></i> | Partenaires</button>
+        </div>
+
+        <div class="dons_menu selection menu">
+          <button id="btn8" class="dons styled" onclick="invisible8()"><i class="fa-solid fa-coins"></i> | Dons</button>
+        </div>
+
+        <div class="liens_utiles_menu selection menu">
+          <button id="btn9" class="liens_utiles styled" onclick="invisible9()"><i class="fa-solid fa-link"></i> | Liens utiles</button>
+        </div>
+
+        <div class="notre_brochure_menu selection menu">
+          <button id="btn10" class="notre_brochure styled" onclick="invisible10()"><i class="fa-solid fa-book-open"></i> | Nos Brochures</button>
+        </div>
+
+        <div class="contact_menu selection menu">
+          <button id="btn11" class="contact styled" onclick="invisible11()"><i class="fa-solid fa-phone"></i> | Nous contacter</button>
+        </div>
+
+        <div class="rgpd_menu selection menu">
+          <button id="btn12" class="rgpd styled" onclick="invisible12()"><i class="fa-solid fa-scroll"></i> | R.G.P.D.</button>
+        </div>
+
+      </div>
+      <!-- Div avec informations au milieu de la page -->
+      <div id="contenu_des_div">
+
+        <div class="accueil invisible selection div_principales" id="div1">
+          <h1 class="selection police_accueil">Espace-rencontre pour le maintien des liens parents-enfants</h1> 
+          <p class="selection"></p> <a class="police_texte2 selection lien_adresse_maps" href="https://www.google.fr/maps/place/Point+Vert/@45.4244536,4.4055124,17z/data=!3m1!4b1!4m5!3m4!1s0x47f5a94100e66563:0xf972ae3695a2257d!8m2!3d45.4243888!4d4.4097036" target="_blank"> 19 rue de la Convention 42100 SAINT-ETIENNE</a></p>
+          <p class=" selection"></p> <a class="police_texte3 selection" href="https://youtu.be/v5ctlyvYb00" target="_blank">Qu'est-ce qu'un Espace de Rencontre Parents-Enfants?</a></p>
+          <img class="selection" loading="lazy" id="img_accueil" src="images/fresque.jpg">
+        </div>
+
+        <div class="notre_raison_d_etre invisible selection div_principales" id="div2">
+          <h1 class="selection">Notre raison d'être</h1>
+          <p class="police_texte selection">Point Vert est un lieu d'accueil neutre, permettant le déroulement de rencontres entre parents et enfants ou grands-parents lorsque le droit de visite se heurte à des difficultés particulières.</p>
+          <p class="police_texte selection">L'objectif de Point Vert, à terme, est de permettre aux parents de gérer les droits de visite eux-mêmes, dans le respect des droits et des devoirs de chacun. Il y a nécessité pour l'enfant d'être et de rester inscrit dans son histoire familiale.</p>
+          <p class="police_texte selection">Etre amputé d'une partie de soi n'aide pas à se structurer harmonieusement.</p>
+        </div>
+
+        <div class="qui_sommes_nous invisible selection div_principales" id="div3">
+          <h1 class="selection">Qui sommes-nous</h1>
+          <p class="police_texte selection">Créée en octobre 1990, l'association est placée sous le régime de la loi de 1901 et a fait l'objet d'un arrêté préfectoral d'agrément du 26 juillet 2013.</p>
+          <p class="police_texte selection">Elle s'inscrit totalement dans la définition et le dispositif édictés par la loi du 5 mars 2007 sur la protection de l'enfance et celui de la loi du 9 juillet 2010 relative aux violences faites aux femmes. Point Vert est adhérente à la <a class="selection" href="https://www.ffer.org/" target="_blank">Fédération Française des Espaces de Rencontre (FFER).</a></p>
+          <p class="police_texte selection">Lorsque le droit de visite se heurte à des difficultés particulières, son exercice à Point Vert est ordonné par les Juges aux Affaires Familiales ou, pour une part plus réduite, par les Juges des Enfants. Quelques situations, très peu nombreuses, sont également soumises à Point Vert à l'initiative conjointe des deux parents.</p>
+          <p class="police_texte selection">L'activité de Point Vert s'exerce dans des locaux loués au Conseil Départemental de la Loire 19 rue de La Convention 42100 Saint-Etienne. Ils sont bien adaptés à la mission car ils ont été conçus pour une large part dans l'optique d'accueillir l'espace de rencontre.</p>
+        </div>
+
+        <div class="notre_mission invisible selection div_principales" id="div4">
+          <h1 class="selection">Notre mission</h1>
+          <ul class="selection">
+            <li class="police_texte selection">La valorisation des rôles et des compétences de chaque parent.</li>
+            <li class="police_texte selection">L'aide et l'accompagnement des familles en conflit, en voie de séparation ou séparés</li>
+            <li class="police_texte selection">La facilitation de l'exercice équitable et responsable de la co-parentalité.</li>
+            <li class="police_texte selection">L'aide à l'implication des parents dans l'exercice de leurs droits et de leurs devoirs parentaux.</li>
+          </ul>
+          <p class="police_texte selection">En effet les parents doivent se réapproprier l'organisation du droit de visite et d'hébergement. C'est pourquoi l'action de Point Vert se veut transitoire. Le souci constant de Point Vert est de réduire le délai s'écoulant entre la date de la décision de justice et celle de sa mise en œuvre.</p>
+          <p class="police_texte selection">L'exercice du droit de visite se fait soit dans les locaux de Point Vert, soit par le biais d'un « droit de <br> passage »,  Point Vert n'étant plus alors « qu'un sas » entre les parents et les enfants.</p>
+          <p class="police_texte selection">Il est important de souligner que dans l'exercice de sa mission Point Vert met en œuvre le code de déontologie du 04 novembre 1998, modifié le 02 décembre 2002. Il est joint en annexe.</p>
+        </div>
+
+        <div class="organisation invisible selection div_principales" id="div5">
+          <h1 class="selection">Organisation</h1>
+          <p class="police_texte selection">Nous offrons 18 plages d'accueil : 4 samedis matin et après-midi, 4 vendredis matin pour les bébés, 4 vendredis soir, 4 mardis soir, 2 mercredis matin, 4 mercredis après-midi et 2 dimanches soir pour les retours de passages. Point Vert propose aux familles un accompagnement individualisé dans un cadre collectif (sans la présence constante d’un tiers).</p>
+          <hr>
+          <p class="police_texte selection">La surface disponible permet un accueil de qualité avec des locaux dédiés à l'accueil, en intérieur et en extérieur ainsi qu'un bureau pour l'équipe.</p>
+        </div>
+
+        <div class="equipe invisible selection div_principales" id="div6">
+          <h1 class="selection">Équipe</h1>
+          <p class="police_texte selection">Au total ce sont 11 salariés qui sont employés par Point Vert dont :
+            <ul class="selection">
+              <li class="police_texte selection">8 travailleurs sociaux de formation et une psychologue, qui forment l'équipe d'intervenants</li>
+              <li class="police_texte selection">une directrice, assistante sociale de formation, qui accompagne et anime l'équipe.</li>
+              <li class="police_texte selection">une secretaire</li>
+              <li class="police_texte selection">3 intervenants bénévoles viennent en appui dans la mission d'accompagnement des rencontres.</li>
+              <li class="police_texte selection">Un psychologue vacataire anime l'analyse de la pratique professionnelle.</li>
+            </ul>
+          </p>
+          <p class="police_texte selection">Le Président, Monsieur Yves Garnier, est assisté d'une Vice-Présidente : Madame Dominique Robinat, d'une Secrétaire, Madame Josiane Flachon et d'une Trésorière, Madame Andrée Sarron. Le Conseil d'Administration est composé de 13 membres. Ceux-ci sont d'origines diverses : Travailleurs Sociaux, Médecins, Avocats et Cadres Supérieurs.</p>
+        </div>
+
+        <div class="partenaires invisible selection div_principales" id="div7">
+          <h1 class="selection">Partenaires</h1>
+          <p class="police_texte selection">La quasi totalité des moyens financiers dont dispose Point Vert est constituée par des subventions publiques.</p>
+          <p class="police_texte selection">Les collectivités et administrations contributives sont les suivantes :
+            <ul class="selection">
+              <li class="police_texte selection"><a class="selection" href="http://www.justice.gouv.fr" target="_blank">L'Etat avec Le Ministère de La Justice</a></li>
+              <hr>
+              <li class="police_texte selection"><a class="selection" href="https://www.loire.fr/jcms/lw_1299656/fr/accueil" target="_blank">Le Conseil Départemental de la Loire</a></li>
+              <hr>
+              <li class="police_texte selection"><a class="selection" href="https://www.caf.fr/allocataires/caf-de-la-loire/nous-contacter/points-d-accueil-de-votre-caf" target="_blank">La Caisse d'Allocations Familiales de la Loire</a></li>
+              <hr>
+              <li class="police_texte selection"><a class="selection" href="https://ardechedromeloire.msa.fr/lfp" target="_blank">La Mutualité Sociale Agricole de la région</a></li>
+            </ul>
+          </p>
+          <img class="selection" id="img_partenaires" src="images/logo_partenaires.png" width="1000" height="1000">
+        </div>
+
+        <div class="dons invisible selection div_principales" id="div8">
+          <h1 class="selection">Dons</h1>
+          <p class="police_texte selection">L'Association est classée Organisme d'Intérêt Général.</p>
+          <p class="police_texte selection">Tout don donne lieu à l'établissement d'un reçu fiscal permettant de bénéficier d'une réduction d'impôt de 66% pour les particuliers et de 60% pour les sociétés dans la limite de 20% du revenu imposable.</p>
+          <p class="police_texte selection">Exemple :<br class="selection">Pour un particulier, un don de 100 € ne lui coûte réellement que 34 €.</p>
+          <p class="police_texte selection">Vous pouvez adresser vos dons par chèque à l'adresse suivante :</p>
+          <p class="police_texte selection">Association Point Vert<br class="selection">19 rue de la Convention<br class="selection">42100 Saint-Etienne</p>
+        </div>
+
+        <div class="liens_utiles invisible selection div_principales" id="div9">
+          <h1 class="selection">Liens utiles</h1>
+          <ul class="selection">
+            <li class="police_texte selection"><a class="selection" href="https://youtu.be/v5ctlyvYb00" target="_blank">Qu'est-ce qu'un Espace de Rencontre Parents-Enfants?</a></li>
+            <hr>
+            <li class="police_texte selection"><a class="selection" href="http://www.cdad-loire.justice.fr/adresses-utiles/fiche/id/3236" target="_blank">Informations sur le Tribunal Judiciaire de Saint-Etienne.</a></li>
+            <hr>
+            <li class="police_texte selection"><a class="selection" href="https://www.avocat-saint-etienne.com" target="_blank">Informations sur l'Ordre des Avocats de Saint-Etienne.</a></li>
+            <hr>
+            <li class="police_texte selection"><a class="selection" href="https://www.soelifa.fr/wp-content/uploads/2019/03/Code_déontologie_FFER_20171019.pdf" target="_blank">Code de déontologie de la Fédération Française des Espaces de Rencontre (FFER).</a></li>
+            <hr>
+            <li class="police_texte selection"><a class="selection" href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000823100" target="_blank">Loi n°2007-293 réformant la protection de l'enfance.</a></li>
+            <hr>
+            <li class="police_texte selection"><a class="selection" href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000022454032" target="_blank">Loi n°2010-769 relative aux violences faites spécifiquement aux femmes.</a></li>
+          </ul>
+        </div>
+
+        <div class="notre_brochure invisible selection div_principales" id="div10">
+          <h1 class="selection">Nos Brochures</h1>
+          <embed class="pdf1" src="images/Livret_parents.pdf" type="application/pdf"/>
+          <embed class="pdf2" src="images/Livret_enfants.pdf" type="application/pdf"/>
+        </div>
+
+        <div class="contact invisible selection div_principales" id="div11">
+          <h1 class="selection">Nous contacter</h1>
+          <p class="police_texte selection">Pour toute question, vous pouvez nous joindre par mail en cliquant sur l'adresse suivante : <br> <a class="selection" href="mailto:contact@point-vert.info">contact@point-vert.info</a> ou par téléphone au 04-77-25-38-62. Vous pouvez également nous envoyer un courrier.</p>
+          <hr>
+          <p class="police_texte selection">Adresse postale :</p>
+          <p class="police_texte selection">Association Point Vert<br class="selection">19 rue de la Convention<br class="selection">42100 Saint-Etienne</p>
+          <input type="image" src="images/plan.PNG" class="selection" id="img_plan" width="700" height="417" onclick='window.open("https:\//www.google.fr/maps/place/Point+Vert/@45.4244536,4.4055124,17z/data=!3m1!4b1!4m5!3m4!1s0x47f5a94100e66563:0xf972ae3695a2257d!8m2!3d45.4243888!4d4.4097036")' target="_blank"></button>
+        </div>
+
+        <div class="rgpd invisible selection div_principales" id="div12">
+          <h1 class="selection">R.G.P.D.</h1>
+          <p class="police_texte selection">Le site point-vert.info est un site d'information propriété de l'association Point Vert.<br class="selection">Ce site est hébergé par la société Amen du groupe Dada 12-14 Rond Point des Champs Elysées 75008 Paris, France.</p>
+          <p class="police_texte selection">Nous ne récoltons aucune donnée vous concernant, excepté votre adresse mail laissée par vous dans la rubrique contact afin de pouvoir vous répondre.</p>
+          <!-- <p class="credit_photo_police selection">Crédit photo : Laurent Asselin</p> -->
+          <!-- <p class="site_realisation_police selection">2022 © Réalisation site web : Rémi Asselin</p> -->
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
+  <!-- Effet du rond de la souris -->
+  <div id="mouse-circle"></div>
+  <script type="text/javascript" src="js/cercle.js"></script>
+  <!-- Script pour faire apparaitre ou non les div contenant les informations -->
+  <script  type="text/javascript" src="js/div_on_off.js"></script>
+</html>
+
+
